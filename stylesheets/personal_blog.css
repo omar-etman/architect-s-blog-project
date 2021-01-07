@@ -1,0 +1,136 @@
+/*personal blog stylesheet - homepage*/
+
+.blog {
+    background-color: rgb(242, 245, 250);
+    grid-template-areas: 
+    "head head head"
+    "nav nav nav"
+    "l-gut cont r-gut"
+    "foot foot foot";
+}
+
+/*head*/
+
+.blog__header{
+    grid-area: head;
+    background-image: url("https://coverfiles.alphacoders.com/141/141175.jpg");
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20rem 0 1rem 1rem;
+    position: relative;
+}
+
+.blog__header__container {
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    align-items: center;
+}
+
+.blog__header__avatar {
+    height: 150px;
+}
+
+.blog__header__text h1 {
+    font-size: 2rem;
+    margin-bottom: 1px;
+    color: honeydew;
+    padding: 0.5rem;
+}
+
+.blog__header__text p {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgb(193, 206, 221);
+    padding-left: 0.5rem;
+}
+
+/*nav*/
+
+.blog__header__nav {
+    grid-area: nav;
+    background-color: rgb(13, 31, 58);
+}
+
+.blog__header__nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+}
+
+.blog__header__nav ul a:link {
+    font-size: 2em;
+    color: rgb(175, 201, 241);
+    font-weight: bold;
+}
+
+.blog__header__nav ul a:visited {
+    color:  rgb(119, 160, 221);
+}
+
+.blog__header__nav ul a:hover {
+    color:  rgb(245, 245, 245);
+}
+
+/*main body*/
+
+.blog__main__content {
+    grid-area: cont;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blog__main__content .card{
+    max-width: 350px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 13px 12px -5px rgba(0,0,0,0.38);
+    -webkit-box-shadow: 0px 13px 12px -5px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0px 13px 12px -5px rgba(0,0,0,0.38);
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+}
+
+.blog__main__content .card__img {
+    width: 100%;
+    height: 480px;
+    margin: 0;
+}
+
+.blog__main__content .card__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog__main__content .card__img figcaption {
+    color: rgb(94, 94, 94);
+    padding-left: 1rem;
+} 
+
+.blog__main__content .card__text {
+    padding: 1rem;
+}
+
+.blog__main__content .card__link {
+    padding: 1rem;
+    width: 100%;
+    text-align: right;
+    background-color: #b6bac0;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.blog__main__content a.card__link:hover {
+    text-decoration: underline;
+}
