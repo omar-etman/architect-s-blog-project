@@ -1,0 +1,138 @@
+/*blog post stylesheet*/
+
+.post {
+    background-color: grey;
+    grid-template-areas:
+    "head head head"
+    "l-gut article r-gut"
+    "foot foot foot";
+}
+
+/*header*/
+
+.post__header {
+    grid-area: head;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:  rgb(13, 31, 58);
+}
+
+.post__header__nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.post__header__nav li {
+    padding: 0 0.75rem 0 0.75rem;
+}
+
+.post__header__nav a:link {
+    color: rgb(175, 201, 241);
+    font-weight: bold;
+}
+
+.post__header__nav a:visited {
+    color:  rgb(95, 127, 175);
+}
+
+.post__header__nav a:hover {
+    color:  rgb(245, 245, 245);
+}
+
+/*main body*/
+
+.post__article {
+    grid-area: article;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 245, 250);
+}
+
+.article__header {
+    color: rgb(13, 31, 58);
+    background-image: url(https://s3.amazonaws.com/architecture-org/files/modules/crown-hall-07-ear.jpg);
+    width: 63%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px 0 25px 0;
+    position: relative;
+}
+
+.article__header h1 {
+    border: 0.5rem solid rgb(13, 31, 58);
+    padding: 2rem;
+    font-size: 2rem;
+    margin: 50px 0 22px 0;
+    position: absolute;
+}
+
+.article__body {
+    width: 63%;
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 25px;
+}
+
+.article__footer {
+    background-color: #9fa3aa;
+    display: flex;
+    height: 200px;
+    width: 100%;
+}
+
+.article__author {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #f2f5fa;
+}
+
+.article__author__info {
+    width: 43%;
+    font-size: 0.9rem;   
+}
+
+.article__author__avatar {
+    height: 80px;
+}
+
+.article__social {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 20%;    
+}
+
+.article__social__icon {
+    background-size: contain;
+    height: 24px;
+    width: 24px;
+}
+
+.article__social li:first-child .article__social__icon {
+    background-image: url(../assets/facebook.png);
+}
+
+.article__social li:nth-child(2) .article__social__icon {
+    background-image: url(../assets/instagram.png);
+}
+
+.article__social li:nth-child(3) .article__social__icon {
+    background-image: url(../assets/linkedin.png);
+}
+
+.article__social li:nth-child(4) .article__social__icon {
+    background-image: url(../assets/twitter.png);
+}
